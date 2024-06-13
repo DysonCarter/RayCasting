@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <iostream>
+#include "player.hpp"
 
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
@@ -30,6 +31,9 @@ int main() {
     // Event handler
     SDL_Event e;
 
+    // Player
+    Player player;
+
     // While application is running
     while (!quit) {
         // Handle events on queue
@@ -43,6 +47,9 @@ int main() {
         // Clear screen
         SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0xFF);
         SDL_RenderClear(renderer);
+
+        // Draw player
+        player.draw(renderer);
 
         // Update screen
         SDL_RenderPresent(renderer);
