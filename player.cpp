@@ -4,3 +4,4 @@
     Class for player
 */
 
+#include "player.hpp"

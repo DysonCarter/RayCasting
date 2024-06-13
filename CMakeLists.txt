@@ -15,7 +15,7 @@ find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
 # Add the executable
-add_executable(RayCastingProject main.cpp)
+add_executable(RayCastingProject main.cpp player.cpp)
 
 # Link SDL2 library
 target_link_libraries(RayCastingProject ${SDL2_LIBRARIES})
