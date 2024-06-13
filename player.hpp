@@ -1,0 +1,5 @@
+/*
+    player.hpp
+
+    Include for player class
+*/
