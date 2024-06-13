@@ -19,3 +19,10 @@ add_executable(RayCastingProject main.cpp)
 
 # Link SDL2 library
 target_link_libraries(RayCastingProject ${SDL2_LIBRARIES})
+
+# Run Target
+add_custom_target(run 
+    COMMAND RayCastingProject
+    DEPENDS RayCastingProject
+    WORKING_DIRECTORY ${CMAKE_PROJECT_DIR}
+)
